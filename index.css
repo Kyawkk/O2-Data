@@ -1,0 +1,36 @@
+h1{
+    color: rgb(255, 0, 170);
+    text-align: center;
+}
+.image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.image-container>img{
+    width: 20%;
+    height: 20%;
+    margin: 1rem;
+    border-radius: 10px;
+}
+
+/* For Small Devices */
+@media screen and (max-width: 320px) {
+    .image-container> img{
+        width: 80%;
+        height: 80%;
+        margin: 1rem;
+    }
+}
+
+/* For medium screen */
+@media screen and (max-width: 568px) {
+    .image-container>img{
+        width: 70%;
+        height: 70%;
+        margin: .5rem;
+    }
+}
